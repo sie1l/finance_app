@@ -1,0 +1,52 @@
+name: finance_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  provider: ^6.1.2
+  http: ^1.2.1
+  fl_chart: ^0.69.0
+  # Ми оновили версію intl, щоб не було конфліктів:
+  intl: ^0.20.2
+  cupertino_icons: ^1.0.8
+  flutter_secure_storage: ^9.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+  flutter_lints: ^5.0.0
+
+# --- НАЛАШТУВАННЯ FLUTTER ---
+flutter:
+  uses-material-design: true
+
+# --- НАЛАШТУВАННЯ СПЛЕШ-СКРІНА (ЗАСТАВКИ) ---
+flutter_native_splash:
+  color: "#1E2A3A"
+  image: assets/icon/app_icon.png
+  android_12:
+    image: assets/icon/app_icon.png
+    color: "#1E2A3A"
+  color_dark: "#1E2A3A"
+  image_dark: assets/icon/app_icon.png
+
+# --- НАЛАШТУВАННЯ ІКОНКИ ДОДАТКА ---
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#1E2A3A"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
